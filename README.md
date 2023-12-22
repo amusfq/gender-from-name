@@ -6,17 +6,19 @@
 Library to detect the gender of a first name. An optional language parameter can be specified to improve the detection, for example: Andrea in EN is female, in IT is male. If no language is specified, EN has priority.
 
 ### Install
-`npm i gender-detection-from-name`
+`npm i gender-from-name`
 
 ### Example
 ```js
-const { getGender } = require('gender-detection-from-name');
+const { getGender } = require('gender-from-name');
 
+const genderID = getGender('Andrea', 'id');
 const genderEN = getGender('Andrea', 'en');
 const genderIT = getGender('Andrea', 'it');
 const genderES = getGender('Andrea', 'es');
 const genderFR = getGender('Andrea', 'fr');
 const gender = getGender('Jennifer');
+console.log(genderID); // female
 console.log(genderEN); // female
 console.log(genderIT); // male
 console.log(genderES); // male
@@ -25,7 +27,7 @@ console.log(gender); // female
 ```
 
 ### Supported languages
-`en`, `it`, `es`, `fr`
+`id`, `en`, `it`, `es`, `fr`
 
 ### Run tests
 ```npm test```
