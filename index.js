@@ -1,3 +1,4 @@
+const idMap = require('./names/id');
 const enMap = require('./names/en');
 const itMap = require('./names/it');
 const esMap = require('./names/es');
@@ -17,11 +18,12 @@ function getGender(name, lang = 'all') {
   name = name.toLowerCase();
   lang = (lang || 'all').toLowerCase();
   const maps = {
+    id: idMap,
     en: enMap,
     it: itMap,
     es: esMap,
     fr: frMap,
-    all: new Map([...itMap, ...enMap, ...esMap, ...frMap]),
+    all: new Map([...idMap, ...enMap, ...itMap, ...esMap, ...frMap]),
   };
   // Use the Map of input language, or use all
   const mapToUse = maps[lang] || maps.all;
