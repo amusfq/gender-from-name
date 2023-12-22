@@ -1,7 +1,7 @@
 {
-  "name": "gender-detection-from-name",
+  "name": "gender-from-name",
   "version": "1.8.0",
-  "description": "Gender detection from first name",
+  "description": "Gender detection from fullname",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
@@ -11,21 +11,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DavideViolante/gender-detection-from-name.git"
+    "url": "git+https://github.com/amusfq/gender-from-name.git"
   },
   "keywords": [
     "gender",
     "detection",
     "guess",
     "name",
-    "first name"
+    "full name"
   ],
-  "author": "Davide Violante",
+  "author": "amusfq",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DavideViolante/gender-detection-from-name/issues"
+    "url": "https://github.com/amusfq/gender-from-name/issues"
   },
-  "homepage": "https://github.com/DavideViolante/gender-detection-from-name#readme",
+  "homepage": "https://github.com/amusfq/gender-from-name#readme",
   "devDependencies": {
     "eslint": "^8.47.0",
     "eslint-config-google": "^0.14.0",
