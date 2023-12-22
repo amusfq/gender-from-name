@@ -1,6 +1,6 @@
 {
   "name": "gender-from-name",
-  "version": "1.8.0",
+  "version": "1.0.0",
   "description": "Gender detection from fullname",
   "main": "index.js",
   "scripts": {
