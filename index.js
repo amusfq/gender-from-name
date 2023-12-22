@@ -54,5 +54,3 @@ exports.detect = function(fullName, lang = 'all') {
   const firstName = getFirstNameFromFullName(fullName);
   return getGender(firstName, lang);
 }
-
-exports.detect = detect;
