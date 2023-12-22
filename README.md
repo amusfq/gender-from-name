@@ -10,14 +10,14 @@ Library to detect the gender of a first name. An optional language parameter can
 
 ### Example
 ```js
-const { getGender } = require('gender-from-name');
+const gender = require('gender-from-name');
 
-const genderID = getGender('Andrea', 'id');
-const genderEN = getGender('Andrea', 'en');
-const genderIT = getGender('Andrea', 'it');
-const genderES = getGender('Andrea', 'es');
-const genderFR = getGender('Andrea', 'fr');
-const gender = getGender('Jennifer');
+const genderID = gender.detect('Andrea', 'id');
+const genderEN = gender.detect('Andrea', 'en');
+const genderIT = gender.detect('Andrea', 'it');
+const genderES = gender.detect('Andrea', 'es');
+const genderFR = gender.detect('Andrea', 'fr');
+const gender = gender.detect('Jennifer');
 console.log(genderID); // female
 console.log(genderEN); // female
 console.log(genderIT); // male
