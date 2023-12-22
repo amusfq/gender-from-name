@@ -32,4 +32,27 @@ function getGender(name, lang = 'all') {
   return result;
 }
 
-exports.getGender = getGender;
+/**
+ * Get firstname from fullname
+ * @param {String} fullname
+ * @return {String} firstname
+ */
+const getFirstNameFromFullName = function(fullName) {
+  return fullName
+    .toLowerCase()
+    .replace(/^\s+|^0-9+|[^a-z-úñäâàáéèëêïîöôùüûœç\- ]+/g, '')
+    .split(/\s/)[0];
+}
+
+/**
+ * Gender detection from fullname and optional language
+ * @param {String} name Fullname
+ * @param {String} [lang] Language
+ * @return {String} male, female, unknown
+ */
+exports.detect = function(fullName, lang = 'all') {
+  const firstName = getFirstNameFromFullName(fullName);
+  return getGender(firstName, lang);
+}
+
+exports.detect = detect;
