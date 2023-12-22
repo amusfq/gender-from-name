@@ -11426,3 +11426,4 @@ const idNames = new Map([
     ["zuwandi", "male"],
     ["zuyana", "female"]
 ]);
+module.exports = idNames;
