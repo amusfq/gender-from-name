@@ -50,9 +50,9 @@ const getFirstNameFromFullName = function(fullName) {
  * @param {String} [lang] Language
  * @return {String} male, female, unknown
  */
-const detect = function(fullName, lang = 'all') {
+const detectGender = function(fullName, lang = 'all') {
   const firstName = getFirstNameFromFullName(fullName);
   return getGender(firstName, lang);
 }
 
-exports.detect = detect;
+exports.detectGender = detectGender;
