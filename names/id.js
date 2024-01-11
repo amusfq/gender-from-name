@@ -2920,6 +2920,7 @@ const idNames = new Map([
     ["fresilia", "female"],
     ["fresli", "male"],
     ["frestya", "female"],
+    ["freya", "female"],
     ["friatin", "female"],
     ["frida", "female"],
     ["fridorenaldy", "male"],
