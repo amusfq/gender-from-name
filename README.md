@@ -14,20 +14,14 @@ const gender = require('gender-from-name');
 
 const genderID = gender.detect('Andrea', 'id');
 const genderEN = gender.detect('Andrea', 'en');
-const genderIT = gender.detect('Andrea', 'it');
-const genderES = gender.detect('Andrea', 'es');
-const genderFR = gender.detect('Andrea', 'fr');
 const gender = gender.detect('Jennifer');
 console.log(genderID); // female
 console.log(genderEN); // female
-console.log(genderIT); // male
-console.log(genderES); // male
-console.log(genderFR); // male
 console.log(gender); // female
 ```
 
 ### Supported languages
-`id`, `en`, `it`, `es`, `fr`
+`id`, `en`
 
 ### Run tests
 ```npm test```
